@@ -1,0 +1,19 @@
+{
+  "feedback": [
+    {
+      "id": "mmj4n6s3",
+      "name": "Fresher",
+      "rating": 3,
+      "comment": "Working",
+      "createdAt": "2026-03-09T11:57:59.187Z"
+    },
+    {
+      "id": "mmj4ofv0",
+      "name": "tested",
+      "rating": 4,
+      "comment": "Checked it",
+      "createdAt": "2026-03-09T11:58:57.612Z"
+    }
+  ],
+  "enquiries": []
+}
