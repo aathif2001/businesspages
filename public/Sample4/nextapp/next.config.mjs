@@ -7,6 +7,7 @@ const __dirname = fileURLToPath(new URL(".", import.meta.url));
 const nextConfig = {
   turbopack: {
     root: __dirname,
+    basePath: '/Sample4',
   },
   allowedDevOrigins: ['192.168.1.189'],
   async rewrites() {
@@ -20,3 +21,4 @@ const nextConfig = {
 };
 
 export default nextConfig;
+

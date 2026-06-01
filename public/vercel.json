@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [
+    { 
+      "src": "Sample4/nextapp/package.json", 
+      "use": "@vercel/next" 
+    },
+    { 
+      "src": "sample5Traceui/package.json", 
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist" }
+    }
+  ],
+  "routes": [
+    { "src": "/Sample4/(.*)", "dest": "Sample4/nextapp/$1" },
+    { "src": "/sample5Traceui/(.*)", "dest": "sample5Traceui/$1" }
+  ]
+}
