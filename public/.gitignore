@@ -1,5 +1,8 @@
 # Dependencies (shared — applies to all sample* directories)
 node_modules/
+sample4/nextapp/node_modules/
+sample4/nextapp/.next/
+sample5TraceUI_UX Design/node_modules/
 
 # Environment variables
 .env
