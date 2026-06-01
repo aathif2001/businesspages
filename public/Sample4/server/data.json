@@ -1,0 +1,52 @@
+{
+  "leads": [
+    {
+      "id": "41be7257-0393-4c48-bbdd-eda3abe9ce75",
+      "name": "Test Client",
+      "email": "test@example.com",
+      "phone": "0771234567",
+      "service": "steel",
+      "volume": "Medium",
+      "urgency": "Standard",
+      "notes": "Test submission",
+      "attachmentFilename": null,
+      "attachmentOriginalName": null,
+      "status": "new",
+      "createdAt": "2026-05-29T21:43:18.178Z"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "t001",
+      "name": "Roshan Perera",
+      "role": "Site Manager, Perera Construction",
+      "rating": 5,
+      "comment": "Outstanding service! Ordered 50MT of steel rebar and it was delivered within 48 hours. The quality is top-notch and the pricing is extremely competitive compared to the market.",
+      "createdAt": "2024-01-15T08:30:00.000Z"
+    },
+    {
+      "id": "t002",
+      "name": "Amara Silva",
+      "role": "Property Developer, AS Realty",
+      "rating": 5,
+      "comment": "Been using Colombo Building Supplies for over 5 years. Their credit terms and bulk order discounts have saved our company millions. Highly recommended for any large-scale project.",
+      "createdAt": "2024-02-20T10:15:00.000Z"
+    },
+    {
+      "id": "t003",
+      "name": "Kasun Fernando",
+      "role": "Principal Contractor, KF Builders",
+      "rating": 5,
+      "comment": "The plumbing and electrical packages are perfectly priced for our project scale. MOQ is flexible for smaller sites too. Communication is always prompt and professional.",
+      "createdAt": "2024-03-10T14:45:00.000Z"
+    },
+    {
+      "id": "t004",
+      "name": "Nilufar Rasheed",
+      "role": "Project Manager, Rasheed Associates",
+      "rating": 5,
+      "comment": "Island-wide delivery is a game-changer. Materials arrive on time every single time, which keeps our projects on schedule. The online quote system saved us hours of back-and-forth calls.",
+      "createdAt": "2024-04-05T09:00:00.000Z"
+    }
+  ]
+}
