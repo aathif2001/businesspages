@@ -5,9 +5,9 @@ const __dirname = fileURLToPath(new URL(".", import.meta.url));
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: '/Sample4',
   turbopack: {
     root: __dirname,
-    basePath: '/Sample4',
   },
   allowedDevOrigins: ['192.168.1.189'],
   async rewrites() {
