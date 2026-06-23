@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { ChevronLeft, ChevronRight, Phone, Mail } from "lucide-react";
 import Image from "next/image"
 
@@ -40,9 +40,14 @@ const slides = [
   },
 ];
 
-export function BannerCarousel() {
+interface BannerCarouselProps {
+  onLoaded?: () => void;
+}
+
+export function BannerCarousel({ onLoaded }: BannerCarouselProps) {
   const [current, setCurrent] = useState(0);
   const [animating, setAnimating] = useState(false);
+  const hasNotified = useRef(false);
 
   const goTo = useCallback(
     (index: number) => {
@@ -76,6 +81,12 @@ export function BannerCarousel() {
             alt={slide.title.replace("\n", " ")}
             className="object-cover"
             priority={i === 0}
+            onLoad={i === 0 ? () => {
+              if (!hasNotified.current) {
+                hasNotified.current = true;
+                onLoaded?.();
+              }
+            } : undefined}
           />
 
 
