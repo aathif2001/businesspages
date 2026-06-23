@@ -1,10 +1,10 @@
-1. connect the Request Quote on whatsapp message system
+1. connect the Request Quote on whatsapp message system - critical
 2. add reviews & stats (connect with google business pages API)
 3. get data to one place for quick update
         - contact deatils
         - products (pictures & pdf)
         - payment deatils
-4. Add loading screen
-5. Add message button to top in mobile screen
+4. Add loading screen - done
+5. Add message button to top in mobile screen - done
 6. update faq - 
 7. make business hours more clear and updatable

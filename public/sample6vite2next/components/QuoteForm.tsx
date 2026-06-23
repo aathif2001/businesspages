@@ -75,7 +75,7 @@ export function QuoteForm() {
                       onChange={handleChange}
                       required
                       placeholder="e.g. Rajith Perera"
-                      className="w-full px-3 py-2.5 rounded border border-gray-200 bg-white text-sm focus:outline-none focus:border-[#C9A227] transition-colors"
+                      className="w-full px-3 py-2.5 rounded border border-gray-200 text-gray-900 bg-white text-sm focus:outline-none focus:border-[#C9A227] transition-colors"
                     />
                   </div>
                   <div>
@@ -89,7 +89,7 @@ export function QuoteForm() {
                       onChange={handleChange}
                       required
                       placeholder="you@example.com"
-                      className="w-full px-3 py-2.5 rounded border border-gray-200 bg-white text-sm focus:outline-none focus:border-[#C9A227] transition-colors"
+                      className="w-full px-3 py-2.5 rounded border border-gray-200 text-gray-900 bg-white text-sm focus:outline-none focus:border-[#C9A227] transition-colors"
                     />
                   </div>
                 </div>
@@ -103,7 +103,7 @@ export function QuoteForm() {
                     value={form.phone}
                     onChange={handleChange}
                     placeholder="+94 77 123 4567"
-                    className="w-full px-3 py-2.5 rounded border border-gray-200 bg-white text-sm focus:outline-none focus:border-[#C9A227] transition-colors"
+                    className="w-full px-3 py-2.5 rounded border border-gray-200 text-gray-900 bg-white text-sm focus:outline-none focus:border-[#C9A227] transition-colors"
                   />
                 </div>
 
@@ -116,7 +116,7 @@ export function QuoteForm() {
                     value={form.message}
                     onChange={handleChange}
                     rows={4}
-                    className="w-full px-3 py-2.5 rounded border border-gray-200 bg-white text-sm focus:outline-none focus:border-[#C9A227] transition-colors resize-none"
+                    className="w-full px-3 py-2.5 rounded border border-gray-200 text-gray-900 bg-white text-sm focus:outline-none focus:border-[#C9A227] transition-colors resize-none"
                   />
                   <p className="text-gray-400 text-xs mt-1">Pre-filled — feel free to add more details.</p>
                 </div>
