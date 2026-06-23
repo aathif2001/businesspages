@@ -43,8 +43,8 @@ export function LoadingScreen({ carouselReady }: LoadingScreenProps) {
             </div>  
 
             {/* ── Bottom-left: Powered By ── */}
-            <div className="absolute bottom-6 right-20 flex items-center gap-2 opacity-60">
-                <img src="/sample6vite2next/poweredby.svg" alt="Powered by" style={{ height: 24}} />
+            <div className="absolute bottom-6 right-6 flex items-center gap-2 opacity-100">
+                <img src="/sample6vite2next/poweredby.png" alt="Powered by" style={{ height: 40}} />
             </div>
 
             {/* ── Bottom: Progress bar ── */}
