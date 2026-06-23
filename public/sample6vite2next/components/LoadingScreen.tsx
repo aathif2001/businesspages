@@ -39,12 +39,12 @@ export function LoadingScreen({ carouselReady }: LoadingScreenProps) {
 
             {/* Center logo */}
             <div className="absolute inset-0 flex items-center justify-center">
-                <img src="/sample6vite2next/logo.svg" alt="Colombo Building Supplies" style={{ width: 100, objectFit: "contain" }} />    
+                <img src="/sample6vite2next/logo.svg" alt="Colombo Building Supplies" style={{ width: 100}} />    
             </div>  
 
             {/* ── Bottom-left: Powered By ── */}
-            <div className="absolute bottom-6 right-6 flex items-center gap-2 opacity-60">
-                <img src="/sample6vite2next/poweredby.svg" alt="Powered by" style={{ height: 18, objectFit: "contain" }} />
+            <div className="absolute bottom-6 right-20 flex items-center gap-2 opacity-60">
+                <img src="/sample6vite2next/poweredby.svg" alt="Powered by" style={{ height: 24}} />
             </div>
 
             {/* ── Bottom: Progress bar ── */}
