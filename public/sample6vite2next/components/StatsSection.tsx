@@ -9,7 +9,7 @@ const stats = [
 
 export function StatsSection() {
   return (
-    <section className="py-16 px-4" style={{ backgroundColor: "#1C2B4A" }}  id='stats'>
+    <section className="py-16 px-4" style={{ backgroundColor: "#1C2B4A" }} id='stats'>
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
           <span style={{ color: "#C9A227" }} className="text-xs tracking-widest uppercase font-medium">
