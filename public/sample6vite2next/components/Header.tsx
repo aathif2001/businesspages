@@ -63,6 +63,19 @@ export function Header() {
             </button>
             </a>
           </div>
+
+          {/* Mobile: Message button only */}
+          <div className="flex md:hidden items-center">
+            <a href="sms:+94112345678?body=Hi,%20I%20would%20like%20more%20information.">
+              <button
+                style={{ backgroundColor: "#C9A227" }}
+                className="text-white text-sm px-3 py-1 rounded hover:opacity-90 transition-opacity font-medium"
+              >
+                Message
+              </button>
+            </a>
+          </div>
+
        
         </div>
       </div>
