@@ -1,6 +1,5 @@
 'use client';
 import { useState, useEffect } from "react";
-import Image from "next/image";
 
 interface LoadingScreenProps {
     carouselReady: boolean;
@@ -40,12 +39,12 @@ export function LoadingScreen({ carouselReady }: LoadingScreenProps) {
 
             {/* Center logo */}
             <div className="absolute inset-0 flex items-center justify-center">
-                <Image src="/sample6vite2next/logo.svg" alt="Colombo Building Supplies" width={160} height={80} unoptimized style={{ objectFit: "contain" }} />    
-            </div>
+                <img src="/sample6vite2next/logo.svg" alt="Colombo Building Supplies" style={{ width: 160, objectFit: "contain" }} />    
+            </div>  
 
             {/* ── Bottom-left: Powered By ── */}
             <div className="absolute bottom-6 right-6 flex items-center gap-2 opacity-60">
-                <Image src="/sample6vite2next/poweredby.svg" alt="Powered by" width={120} height={24} unoptimized style={{ objectFit: "contain" }} />
+                <img src="/sample6vite2next/poweredby.svg" alt="Powered by" style={{ height: 28, objectFit: "contain" }} />
             </div>
 
             {/* ── Bottom: Progress bar ── */}
