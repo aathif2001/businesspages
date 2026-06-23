@@ -41,7 +41,7 @@ body {
 }
 
 .hero-gradient {
-  background: linear-gradient(135deg, #7c3aed, #ec4899);
+  background: linear-gradient(135deg, #000000, #ec4899);
   height: 160px;
 }
 

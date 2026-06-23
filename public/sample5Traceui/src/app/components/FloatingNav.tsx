@@ -50,7 +50,7 @@ export function FloatingNav() {
               onClick={() => setActive(i)}
               className="flex flex-col items-center justify-center px-3 py-1.5 rounded-full transition-all"
               style={{
-                backgroundColor: isActive ? "rgba(201,162,39,0.18)" : "transparent",
+                backgroundColor: isActive ? "rgba(201,162,39,0.15)" : "transparent",
                 minWidth: 52,
               }}
             >

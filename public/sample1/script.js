@@ -12,6 +12,7 @@ function setupNavigation() {
   if (!nav) return;
 
   const items = Array.from(nav.querySelectorAll(".nav-item"));
+  items.forEach((item) => {console.log(item)})
 
   items.forEach((item) => {
     const targetId = item.getAttribute("data-target");
@@ -23,13 +24,13 @@ function setupNavigation() {
     });
   });
 
-  const sections = items
-    .map((item) => {
+  const sections = items.map((item) => {
       const id = item.getAttribute("data-target");
       const section = document.getElementById(id);
       return section ? { id, section, item } : null;
-    })
-    .filter(Boolean);
+    }).filter(Boolean);
+  console.log(sections[1]["section"]);
+
 
   if ("IntersectionObserver" in window) {
     const observer = new IntersectionObserver(
@@ -344,6 +345,7 @@ async function loadInitialFeedback() {
     if (!response.ok) {
       throw new Error("Failed to load feedback");
     }
+
     const feedback = await response.json();
     listEl.innerHTML = "";
     feedback.forEach(appendFeedback);

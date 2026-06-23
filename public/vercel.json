@@ -5,6 +5,10 @@
       "src": "Sample4/nextapp/package.json", 
       "use": "@vercel/next" 
     },
+    {
+      "src": "sample6vite2next/package.json",
+      "use": "@vercel/next"
+    },
     { 
       "src": "sample5Traceui/package.json", 
       "use": "@vercel/static-build",
@@ -13,6 +17,7 @@
   ],
   "routes": [
     { "src": "/Sample4/(.*)", "dest": "Sample4/nextapp/$1" },
-    { "src": "/sample5Traceui/(.*)", "dest": "sample5Traceui/$1" }
+    { "src": "/sample5Traceui/(.*)", "dest": "sample5Traceui/$1" },
+    { "src": "/sample6vite2next/(.*)", "dest": "sample6vite2next/$1" }
   ]
 }
