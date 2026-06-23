@@ -118,7 +118,7 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-start gap-2.5">
                 <a href="https://maps.app.goo.gl/QM7nR296Z766dBqb8" className="flex items-center gap-2.5">
-                <MapPin size={14} style={{ color: "#C9A227" }} className="mt-0.5 flex-shrink-0" />
+                <MapPin size={14} style={{ color: "#C9A227" }} className="mt-0.5 shrink-0" />
                 <span className="text-gray-400 text-sm">
                   42 Galle Road, Colombo 03, Sri Lanka
                 </span>
