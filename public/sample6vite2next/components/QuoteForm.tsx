@@ -7,6 +7,8 @@ const AUTO_MESSAGE = "I am interested in your services, i want to book a free co
 
 export function QuoteForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -18,9 +20,32 @@ export function QuoteForm() {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    setError(null);
+
+    try {
+      const response = await fetch('/sample6vite2next/api/send-quote', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+
+      const data = await response.json();
+  
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Something went wrong. Please try again.');
+      }
+
+      setSubmitted(true);
+    } catch (err: unknown) {
+      const message = err instanceof Error ? err.message : 'Something went wrong.';
+      setError(message);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -121,12 +146,19 @@ export function QuoteForm() {
                   <p className="text-gray-400 text-xs mt-1">Pre-filled — feel free to add more details.</p>
                 </div>
 
+                {error && (
+                  <div className="p-3 rounded bg-red-50 border border-red-200 text-red-600 text-xs">
+                    ⚠️ {error}
+                  </div>
+                )}
+
                 <button
                   type="submit"
-                  style={{ backgroundColor: "#1C2B4A" }}
-                  className="w-full text-white py-3 rounded hover:opacity-90 transition-opacity font-medium text-sm"
+                  disabled={loading}
+                  style={{ backgroundColor: loading ? "#4a5568" : "#1C2B4A" }}
+                  className="w-full text-white py-3 rounded hover:opacity-90 transition-opacity font-medium text-sm disabled:cursor-not-allowed"
                 >
-                  Submit Quote Request
+                  {loading ? '⏳ Sending...' : 'Submit Quote Request'}
                 </button>
                 <p className="text-gray-400 text-xs text-center">
                   We&apos;ll respond within 24 hours. No commitment required.
